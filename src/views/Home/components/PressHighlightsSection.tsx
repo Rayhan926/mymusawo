@@ -38,7 +38,9 @@ const PressHighlightsSection = () => {
                       alt={description}
                       className="max-h-[75px]"
                     />
-                    <p className="text-2xl mt-[30px]">{description}</p>
+                    <p className="text-base lg:text-lg mt-[30px]">
+                      {description}
+                    </p>
                   </div>
                 </a>
               </SwiperSlide>

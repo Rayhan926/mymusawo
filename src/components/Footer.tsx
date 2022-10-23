@@ -21,14 +21,12 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-wrap gap-[70px] lg:gap-[100px] text-white">
             <div>
-              <h4 className="text-[24px] lg:text-[32px] font-semibold">
-                Quick Links
-              </h4>
+              <h4 className="text-lg lg:text-xl font-semibold">Quick Links</h4>
               <ul className="my-5 lg:my-[30px]">
                 {menus.map(({ text, url }, i) => (
                   <li key={i}>
                     <a
-                      className="text-[16px] lg:text-[20px] py-0.5 hover:underline block"
+                      className="text-[15px] lg:text-[16px] py-0.5 hover:underline block"
                       href={url}
                     >
                       {text}
@@ -69,8 +67,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-[16px] lg:text-[20px]">
-              <h4 className="text-[24px] lg:text-[32px] font-semibold mb-5 lg:mb-[30px]">
+            <div className="text-[15px] lg:text-[16px]">
+              <h4 className="text-lg lg:text-xl font-semibold mb-5 lg:mb-[30px]">
                 Contact us
               </h4>
 
@@ -145,7 +143,7 @@ const Footer = () => {
                       name="message"
                       className="__input"
                       placeholder="Message"
-                      rows={3}
+                      rows={4}
                     />
                     <div className="flex sm:justify-end">
                       <button

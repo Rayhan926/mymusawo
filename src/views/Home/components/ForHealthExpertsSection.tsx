@@ -13,7 +13,7 @@ const ForHealthExpertsSection = () => {
               className="bg-white rounded-[30px] py-8 lg:py-[50px] px-9 lg:px-[54px] shadow-[0px_10px_24px_0px_#0000000F] text-center flex flex-col justify-center items-center"
             >
               <h3 className="__title">{title}</h3>
-              <p className="text-[20px] lg:text-[32px] leading-[28px] lg:leading-[43px] my-6 lg:my-8">
+              <p className="text-[20px] lg:text-[20px] leading-[28px] lg:leading-[28px] my-5 lg:my-6">
                 {description}
               </p>
               <a href="#" className="gradient_btn_2">

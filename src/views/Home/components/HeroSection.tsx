@@ -7,10 +7,10 @@ const HeroSection = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 text-white">
           <div className="flex flex-col justify-center">
-            <h1 className="text-[40px] lg:text-[96px] font-segoe-ui-bold leading-[100%] ">
+            <h1 className="text-[40px] lg:text-[80px] font-segoe-ui-bold leading-[100%] max-w-[500px]">
               The future of Health Care
             </h1>
-            <p className="text-[16px] lg:text-[20px] leading-[130%] mt-[30px] mb-[50px]">
+            <p className="text-[16px] lg:text-[18px] leading-[140%] mt-[30px] mb-[50px] max-w-[700px]">
               Ask a musawo and get immediate responses from our diverse team of
               health experts. Receive personalised health insights, join
               discussions, like, comment and share with your loved ones. Let’s

@@ -11,9 +11,9 @@ const AboutSection = () => {
             key={i}
             className="bg-white rounded-[30px] shadow-[0px_10px_24px_0px_#0000000F] p-10 flex flex-col justify-center items-center text-center gap-6 lg:gap-10"
           >
-            <div className="max-w-[80px] lg:max-w-[117px]">{icon}</div>
+            <div className="max-w-[80px] lg:max-w-[100px]">{icon}</div>
 
-            <h4 className="text-xl lg:text-2xl font-semibold">{text}</h4>
+            <h4 className="text-base lg:text-lg font-semibold">{text}</h4>
           </div>
         ))}
       </div>
@@ -31,7 +31,7 @@ const AboutSection = () => {
 
           <div className="flex flex-col justify-center items-start">
             <h3 className="text-4xl font-segoe-ui-bold">About Us</h3>
-            <p className="mt-5 mb-[50px] text-base lg:text-xl max-w-[710px]">
+            <p className="mt-5 mb-[50px] text-base lg:text-lg max-w-[710px]">
               My Musawo, which is Luganda for “My Doctor”, is a mobile app that
               gives Ugandans access to quality health care information, services
               and products.

@@ -13,13 +13,13 @@
 
 @layer components {
   .container {
-    @apply max-w-[1660px] px-5 mx-auto;
+    @apply max-w-[1500px] px-5 mx-auto;
   }
   .__title {
-    @apply text-[30px] lg:text-[36px] font-segoe-ui-bold;
+    @apply text-[26px] lg:text-[30px] font-segoe-ui-bold;
   }
   .__input {
-    @apply px-5 py-3 rounded-[10px] bg-white/25 border border-white/25 focus:border-white outline-none placeholder:text-white/50 w-full text-white text-[16px] lg:text-[20px];
+    @apply px-5 py-3 rounded-[10px] bg-white/25 border border-white/25 focus:border-white outline-none placeholder:text-white/50 w-full text-white text-[15px] lg:text-[16px];
   }
 }
 
@@ -34,6 +34,10 @@
 
 body {
   @apply font-segoe-ui-regular;
+}
+
+#__next {
+  @apply max-w-[100vw] overflow-x-hidden;
 }
 
 .hero_bg {

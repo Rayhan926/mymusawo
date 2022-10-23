@@ -13,11 +13,11 @@ const HowItWorksSection = () => {
               key={i}
               className="rounded-[20px] border-2 border-white p-11 flex justify-center items-center flex-col text-center relative"
             >
-              <h6 className="text-3xl font-segoe-ui-bold">{title}</h6>
-              <p className="text-xl mt-8">{description}</p>
+              <h6 className="text-[24px] font-segoe-ui-bold">{title}</h6>
+              <p className="text-lg mt-6">{description}</p>
 
               {i + 1 < howItWorks.length && (
-                <div className="absolute top-[calc(100%+50px)] left-1/2 lg:left-auto rotate-90 lg:rotate-0 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-right-[120px]">
+                <div className="absolute top-[calc(100%+50px)] left-1/2 lg:left-auto rotate-90 lg:rotate-0 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-right-[140px]">
                   <HiOutlineChevronRight size={45} />
                 </div>
               )}

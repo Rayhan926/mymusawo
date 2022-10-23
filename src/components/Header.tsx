@@ -37,7 +37,7 @@ function Header() {
         {/* Logo Start */}
         <div className="shrink-0">
           <Link href="/">
-            <a className="w-[140px] block lg:w-auto">
+            <a className="w-[140px] block lg:w-[200px]">
               <svg
                 className="w-full"
                 viewBox="0 0 196 71"

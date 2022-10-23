@@ -15,7 +15,7 @@ const CategoriesSection = () => {
       </div>
 
       <div className="relative">
-        <div className="max-w-[1730px] mx-auto px-5">
+        <div className="container">
           <div className="mt-[70px]">
             <div className="flex flex-col-reverse">
               {/** Swiper Pagination --Start-- */}
@@ -64,13 +64,13 @@ const CategoriesSection = () => {
                 >
                   {categories.map(({ imgSrc, title }, i) => (
                     <SwiperSlide key={i}>
-                      <div className="h-[250px] rounded-[20px] overflow-hidden relative">
-                        <img
-                          src={imgSrc}
-                          alt={title}
-                          className="w-full h-full object-cover"
-                        />
-
+                      <div
+                        style={{
+                          backgroundImage: `url("${imgSrc}")`,
+                          backgroundPositionY: "-60px",
+                        }}
+                        className="h-[250px] rounded-[20px] overflow-hidden relative bg-no-repeat"
+                      >
                         <div
                           style={{
                             background:
