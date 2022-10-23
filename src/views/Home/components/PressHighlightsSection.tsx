@@ -6,8 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const PressHighlightsSection = () => {
   return (
-    <section className="mt-20 lg:mt-[150px] press_section">
-      <div className="px-5 lg:px-[3%]">
+    <section className="mt-20 xl:mt-[150px] press_section">
+      <div className="px-5 xl:px-[3%]">
         <h2 className="__title text-center">Recent Press Highlights</h2>
         <div className="mt-[55px]">
           <Swiper
@@ -38,7 +38,7 @@ const PressHighlightsSection = () => {
                       alt={description}
                       className="max-h-[75px]"
                     />
-                    <p className="text-base lg:text-lg mt-[30px]">
+                    <p className="text-base xl:text-lg mt-[30px]">
                       {description}
                     </p>
                   </div>
@@ -51,7 +51,7 @@ const PressHighlightsSection = () => {
 
       <div className="container mt-[100px]">
         <div className="bg-[url('/img/Simple-Shiny.png')] bg-no-repeat bg-center bg-cover rounded-[30px] pt-[60px] pb-12 text-center">
-          <h2 className="text-[32px] lg:text-[48px] font-segoe-ui-bold text-white">
+          <h2 className="text-[32px] xl:text-[48px] font-segoe-ui-bold text-white">
             Your Health and Wellness Matters.
           </h2>
 

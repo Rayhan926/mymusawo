@@ -13,16 +13,39 @@ export const menus = [
     url: "#about-us",
   },
   {
-    text: "Our Journey",
-    url: "#our-journey",
+    text: "How it Works",
+    url: "#how-it-works",
+  },
+  {
+    text: "For Experts",
+    url: "#for-experts",
+  },
+  {
+    text: "For Businesses",
+    url: "#for-businesses",
+  },
+];
+
+export const quickLinks = [
+  {
+    text: "About Us",
+    url: "#about-us",
+  },
+  {
+    text: "For Experts",
+    url: "#for-experts",
+  },
+  {
+    text: "For Businesses",
+    url: "#for-businesses",
   },
   {
     text: "Our Team",
-    url: "#out-team",
+    url: "#our-team",
   },
   {
-    text: "Our Partners",
-    url: "#our-partners",
+    text: "Our Journey",
+    url: "#our-journey",
   },
 ];
 

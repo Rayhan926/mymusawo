@@ -16,10 +16,10 @@
     @apply max-w-[1500px] px-5 mx-auto;
   }
   .__title {
-    @apply text-[26px] lg:text-[30px] font-segoe-ui-bold;
+    @apply text-[26px] xl:text-[30px] font-segoe-ui-bold;
   }
   .__input {
-    @apply px-5 py-3 rounded-[10px] bg-white/25 border border-white/25 focus:border-white outline-none placeholder:text-white/50 w-full text-white text-[15px] lg:text-[16px];
+    @apply px-5 py-3 rounded-[10px] bg-white/25 border border-white/25 focus:border-white outline-none placeholder:text-white/50 w-full text-white text-[15px] xl:text-[16px];
   }
 }
 
@@ -77,11 +77,11 @@ html {
 }
 
 #categoriesPagination {
-  @apply flex justify-center mt-8 lg:mt-[70px] gap-2 lg:gap-[30px];
+  @apply flex justify-center mt-8 xl:mt-[70px] gap-2 xl:gap-[30px];
 }
 
 #categoriesPagination span {
-  @apply w-5 lg:w-[100px] shrink-0 h-1.5 rounded-full block bg-[rgba(210,210,210,0.25)];
+  @apply w-5 xl:w-[100px] shrink-0 h-1.5 rounded-full block bg-[rgba(210,210,210,0.25)];
 }
 #categoriesPagination span.swiper-pagination-bullet-active {
   @apply bg-[#0EB6D3];

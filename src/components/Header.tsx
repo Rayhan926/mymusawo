@@ -28,8 +28,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 duration-[0.4s] py-4 lg:py-5 ${
-        fixedHeader ? "bg-[#0DB6D2]" : "lg:!pt-7"
+      className={`fixed top-0 left-0 w-full z-50 duration-[0.4s] py-4 xl:py-5 ${
+        fixedHeader ? "bg-[#0DB6D2]" : "xl:!pt-7"
       }`}
       id="top_header"
     >
@@ -37,7 +37,7 @@ function Header() {
         {/* Logo Start */}
         <div className="shrink-0">
           <Link href="/">
-            <a className="w-[140px] block lg:w-[200px]">
+            <a className="w-[140px] block xl:w-[200px]">
               <svg
                 className="w-full"
                 viewBox="0 0 196 71"
@@ -76,21 +76,21 @@ function Header() {
           <div
             onClick={closeSidebar}
             id="mobile_sidebar"
-            className={`fixed pointer-events-none top-0 left-0 w-full h-screen bg-black/50 z-50 lg:static lg:w-auto lg:h-auto lg:bg-transparent opacity-0 duration-200 ${
+            className={`fixed pointer-events-none top-0 left-0 w-full h-screen bg-black/50 z-50 xl:static xl:w-auto xl:h-auto xl:bg-transparent opacity-0 duration-200 ${
               showSidebar ? "opacity-100 pointer-events-auto" : ""
-            } lg:opacity-100 lg:pointer-events-auto font-openSans`}
+            } xl:opacity-100 xl:pointer-events-auto font-openSans`}
           >
             <ul
-              className={`mobile_sidebar_gradeint lg:bg-gradient-to-r lg:from-transparent lg:to-transparent border-r-2 lg:border-r-0 border-transparent gap-10 font-inter font-normal text-black lg:text-white bg-white pt-5 lg:pt-0 w-[80%] lg:w-auto lg:flex h-full lg:h-auto lg:bg-transparent -translate-x-full duration-200 ${
+              className={`mobile_sidebar_gradeint xl:bg-gradient-to-r xl:from-transparent xl:to-transparent border-r-2 xl:border-r-0 border-transparent gap-10 font-inter font-normal text-black xl:text-white bg-white pt-5 xl:pt-0 w-[80%] xl:w-auto xl:flex h-full xl:h-auto xl:bg-transparent -translate-x-full duration-200 ${
                 showSidebar ? "translate-x-0" : ""
-              } lg:translate-x-0`}
+              } xl:translate-x-0`}
             >
               {menus.map((nav, i) => (
                 <li key={i}>
                   <a
                     href={nav.url}
                     onClick={closeSidebarForcely}
-                    className="hover:text-blue border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block lg:p-1 uppercase"
+                    className="hover:text-blue border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block xl:p-1 uppercase"
                   >
                     {nav.text}
                   </a>
@@ -98,17 +98,17 @@ function Header() {
               ))}
             </ul>
             <div
-              className="text-white hover:text-white border-b-2 border-transparent hover:border-primary hover:scale-110 duration-100 lg:hidden"
+              className="text-white hover:text-white border-b-2 border-transparent hover:border-primary hover:scale-110 duration-100 xl:hidden"
               onClick={() => setShowSidebar((prev) => !prev)}
             >
               <GiHamburgerMenu color="#fff" size={25} />
             </div>
           </div>
           {/* Nav End */}
-          <div className="text-white flex items-center gap-6 lg:gap-8">
+          <div className="text-white flex items-center gap-6 xl:gap-8">
             {/* Hamburger Icon --Start-- */}
             <div
-              className="hover:text-white lg:hidden"
+              className="hover:text-white xl:hidden"
               onClick={() => setShowSidebar((prev) => !prev)}
             >
               {showSidebar ? (

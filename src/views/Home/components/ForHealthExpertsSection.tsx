@@ -4,16 +4,16 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 
 const ForHealthExpertsSection = () => {
   return (
-    <section className='bg-[url("/img/for-health-experts-bg.png")] bg-no-repeat bg-center pt-[300px] lg:pb-[166px] -mt-[125px]'>
-      <div className="container">
-        <div className="max-w-[1120px] mx-auto grid grid-cols-1 lg:grid-cols-[repeat(2,514px)] gap-12 lg:gap-[92px]">
+    <section className='bg-[url("/img/for-health-experts-bg.png")] bg-no-repeat bg-center pt-[200px] lg:pt-[300px] xl:pb-[166px] -mt-[125px]'>
+      <div className="container scroll-mt-[150px]" id="for-experts">
+        <div className="max-w-[1120px] mx-auto grid grid-cols-1 xl:grid-cols-[repeat(2,514px)] mb-12 xl:mb-0 gap-12 xl:gap-[92px]">
           {forHealthExperts.map(({ description, title }, i) => (
             <div
               key={i}
-              className="bg-white rounded-[30px] py-8 lg:py-[50px] px-9 lg:px-[54px] shadow-[0px_10px_24px_0px_#0000000F] text-center flex flex-col justify-center items-center"
+              className="bg-white rounded-[30px] py-8 xl:py-[50px] px-6 xl:px-[54px] shadow-[0px_10px_24px_0px_#0000000F] text-center flex flex-col justify-center items-center"
             >
               <h3 className="__title">{title}</h3>
-              <p className="text-[20px] lg:text-[20px] leading-[28px] lg:leading-[28px] my-5 lg:my-6">
+              <p className="text-[16px] xl:text-[20px] leading-[24px] xl:leading-[28px] my-5 mb-6 xl:my-6">
                 {description}
               </p>
               <a href="#" className="gradient_btn_2">

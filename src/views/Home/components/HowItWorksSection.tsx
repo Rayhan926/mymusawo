@@ -4,10 +4,13 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 
 const HowItWorksSection = () => {
   return (
-    <section className="bg-[url('/img/how-it-works-bg.png')] bg-cover bg-no-repeat bg-center pb-[160px] pt-[50px] mt-[100px]">
+    <section
+      id="how-it-works"
+      className="bg-[url('/img/how-it-works-bg.png')] bg-cover bg-no-repeat bg-center pb-[160px] pt-[50px] mt-[100px] scroll-mt-[150px]"
+    >
       <div className="container text-white">
         <h2 className="__title text-center">How it Works</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[140px] lg:gap-[180px] mt-[62px]">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-[140px] xl:gap-[180px] mt-[62px]">
           {howItWorks.map(({ description, title }, i) => (
             <div
               key={i}
@@ -17,7 +20,7 @@ const HowItWorksSection = () => {
               <p className="text-lg mt-6">{description}</p>
 
               {i + 1 < howItWorks.length && (
-                <div className="absolute top-[calc(100%+50px)] left-1/2 lg:left-auto rotate-90 lg:rotate-0 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-right-[140px]">
+                <div className="absolute top-[calc(100%+50px)] left-1/2 xl:left-auto rotate-90 xl:rotate-0 -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:-right-[140px]">
                   <HiOutlineChevronRight size={45} />
                 </div>
               )}

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const CategoriesSection = () => {
   return (
-    <section className="mt-[100px] lg:mt-[150px]">
+    <section className="mt-[100px] xl:mt-[150px]">
       <div className="container">
         <h2 className="__title text-center">
           Our Comprehensive Health and Wellness Categories
@@ -25,13 +25,13 @@ const CategoriesSection = () => {
               <div className="relative">
                 <button
                   id="prevBtn"
-                  className="hidden lg:flex categoriesNavigationBtn absolute top-0 right-full h-full w-[65px] z-10 items-center justify-end text-[#EAEAEA]"
+                  className="hidden xl:flex categoriesNavigationBtn absolute top-0 right-full h-full w-[65px] z-10 items-center justify-end text-[#EAEAEA]"
                 >
                   <HiOutlineChevronLeft size={40} />
                 </button>
                 <button
                   id="nextBtn"
-                  className="hidden lg:flex categoriesNavigationBtn absolute top-0 left-full h-full w-[65px] z-10 items-center justify-start text-[#EAEAEA]"
+                  className="hidden xl:flex categoriesNavigationBtn absolute top-0 left-full h-full w-[65px] z-10 items-center justify-start text-[#EAEAEA]"
                 >
                   <HiOutlineChevronRight size={40} />
                 </button>

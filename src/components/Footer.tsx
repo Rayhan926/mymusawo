@@ -1,4 +1,4 @@
-import { menus, socials } from "@config/constants";
+import { quickLinks, socials } from "@config/constants";
 import Image from "next/image";
 import React from "react";
 import Input from "./Input";
@@ -16,17 +16,17 @@ const Footer = () => {
           backgroundImage: "url('/img/footer-bg.png')",
           // clipPath: " circle(75.7% at 48% 100%)",
         }}
-        className="py-[90px] lg:py-[124px] bg-no-repeat bg-cover bg-top"
+        className="py-[90px] xl:py-[124px] bg-no-repeat bg-cover bg-top"
       >
         <div className="container">
-          <div className="flex flex-wrap gap-[70px] lg:gap-[100px] text-white">
+          <div className="flex flex-wrap lg:flex-nowrap gap-[70px] xl:gap-[100px] text-white">
             <div>
-              <h4 className="text-lg lg:text-xl font-semibold">Quick Links</h4>
-              <ul className="my-5 lg:my-[30px]">
-                {menus.map(({ text, url }, i) => (
+              <h4 className="text-lg xl:text-xl font-semibold">Quick Links</h4>
+              <ul className="my-5 xl:my-[30px]">
+                {quickLinks.map(({ text, url }, i) => (
                   <li key={i}>
                     <a
-                      className="text-[15px] lg:text-[16px] py-0.5 hover:underline block"
+                      className="text-[15px] xl:text-[16px] py-0.5 hover:underline inline-block"
                       href={url}
                     >
                       {text}
@@ -67,8 +67,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-[15px] lg:text-[16px]">
-              <h4 className="text-lg lg:text-xl font-semibold mb-5 lg:mb-[30px]">
+            <div className="text-[15px] xl:text-[16px]">
+              <h4 className="text-lg xl:text-xl font-semibold mb-5 xl:mb-[30px]">
                 Contact us
               </h4>
 
@@ -95,7 +95,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="w-full lg:w-[525px] ml-auto">
+            <div className="w-full max-w-[525px] ml-auto">
+              <h4 className="text-lg xl:text-xl font-semibold mb-5 xl:mb-[30px]">
+                Get in Touch
+              </h4>
+
               <Formik
                 initialValues={{
                   name: "",
@@ -165,8 +169,17 @@ const Footer = () => {
       {/** Footer Top --End-- */}
 
       {/** Footer Bottom --Start-- */}
-      <div className="text-center py-5 container text-[#CCCCCC]">
-        © My Musawo 2021. All Rights Reserved.
+      <div className="text-center py-5 container  text-sm xl:text-base flex justify-between items-center">
+        <p className="opacity-60">© My Musawo 2021. All Rights Reserved.</p>
+
+        <div className="flex gap-5 opacity-60">
+          <a href="#" className="hover:underline">
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:underline">
+            User Agreement
+          </a>
+        </div>
       </div>
       {/** Footer Bottom --End-- */}
     </footer>
