@@ -20,13 +20,15 @@ const AboutSection = () => {
 
       <div className="container mt-[100px] scroll-mt-[150px]" id="about-us">
         <div className="grid grid-cols-1 xl:grid-cols-[60%,auto] gap-5">
-          <div>
-            <Image
-              src={"/img/compressed/about-us.png"}
-              alt="about-us"
-              width={852}
-              height={602}
-            />
+          <div className="overflow-hidden">
+            <div className="scale-[1.3] py-6 xl:scale-100 xl:py-0">
+              <Image
+                src={"/img/compressed/about-us.png"}
+                alt="about-us"
+                width={852}
+                height={602}
+              />
+            </div>
           </div>
 
           <div className="flex flex-col justify-center items-start">
@@ -46,9 +48,11 @@ const AboutSection = () => {
               well as a robust support system.
             </p>
 
-            <button className="gradient_btn">
-              <span>Join our mailing list</span>
-            </button>
+            <div className="flex justify-center md:justify-start w-full">
+              <button className="gradient_btn">
+                <span>Join our mailing list</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

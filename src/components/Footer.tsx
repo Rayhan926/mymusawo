@@ -169,7 +169,7 @@ const Footer = () => {
       {/** Footer Top --End-- */}
 
       {/** Footer Bottom --Start-- */}
-      <div className="text-center py-5 container  text-sm xl:text-base flex justify-between items-center">
+      <div className="text-center py-5 gap-3 container  text-sm xl:text-base flex flex-col sm:flex-row justify-center sm:justify-between items-center">
         <p className="opacity-60">© My Musawo 2021. All Rights Reserved.</p>
 
         <div className="flex gap-5 opacity-60">

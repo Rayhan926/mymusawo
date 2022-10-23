@@ -330,7 +330,7 @@ export const steadilyStats = [
   },
   {
     value: "100",
-    label: "Beta Tester",
+    label: "Beta Testers",
   },
   {
     value: "$15,000",
