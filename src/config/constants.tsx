@@ -246,7 +246,7 @@ export const howItWorks = [
   {
     title: "Browse",
     description:
-      "Previously asked health and wellness questions, health experts, and directory.",
+      "Browse previously asked health and wellness questions, health experts, and directory.",
   },
   {
     title: "Ask",

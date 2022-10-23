@@ -6,7 +6,7 @@ const HowItWorksSection = () => {
   return (
     <section
       id="how-it-works"
-      className="bg-[url('/img/how-it-works-bg.png')] bg-cover bg-no-repeat bg-center pb-[160px] pt-[50px] mt-[100px] scroll-mt-[150px]"
+      className="bg-[url('/img/how-it-works-mobile-bg.jpeg')] xl:bg-[url('/img/how-it-works-desktop-bg.jpeg')] bg-no-repeat bg-center pb-[160px] pt-[50px] mt-[100px] scroll-mt-[150px]"
     >
       <div className="container text-white">
         <h2 className="__title text-center">How it Works</h2>
