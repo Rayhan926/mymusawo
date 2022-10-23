@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Segoe-UI-Bold";
+  src: url("/fonts/Segoe-UI-Bold.ttf");
+}
+@font-face {
+  font-family: "Segoe-UI-Regular";
+  src: url("/fonts/Segoe-UI-Regular.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1660px] px-5 mx-auto;
+  }
+  .__title {
+    @apply text-[30px] lg:text-[36px] font-segoe-ui-bold;
+  }
+  .__input {
+    @apply px-5 py-3 rounded-[10px] bg-white/25 border border-white/25 focus:border-white outline-none placeholder:text-white/50 w-full text-white text-[16px] lg:text-[20px];
+  }
+}
+
+@layer utilities {
+  .gradient_text {
+    background: linear-gradient(135deg, #0eb6d3 0%, #00cecb 100%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+  }
+}
+
+body {
+  @apply font-segoe-ui-regular;
+}
+
+.hero_bg {
+  background-image: linear-gradient(
+      rgba(14, 182, 211, 0.9),
+      rgba(14, 182, 211, 0.9)
+    ),
+    url("/img/hero-blur-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  clip-path: circle(2200px at center -1270px);
+}
+
+.gradient_btn,
+.gradient_btn_2 {
+  @apply px-[34px] py-[13px] rounded-[10px] border-2 border-transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #0eb6d3 0%, #00cecb 100%) border-box;
+}
+
+.gradient_btn span {
+  @apply gradient_text;
+}
+
+.gradient_btn:hover,
+.gradient_btn_2 {
+  background: linear-gradient(135deg, #0eb6d3 0%, #00cecb 100%) padding-box,
+    linear-gradient(135deg, #0eb6d3 0%, #00cecb 100%) border-box;
+}
+.gradient_btn:hover span,
+.gradient_btn_2 span {
+  color: white !important;
+}
+
+#categoriesPagination {
+  @apply flex justify-center mt-8 lg:mt-[70px] gap-2 lg:gap-[30px];
+}
+
+#categoriesPagination span {
+  @apply w-5 lg:w-[100px] shrink-0 h-1.5 rounded-full block bg-[rgba(210,210,210,0.25)];
+}
+#categoriesPagination span.swiper-pagination-bullet-active {
+  @apply bg-[#0EB6D3];
+}
+
+.categoriesNavigationBtn::before {
+  content: "";
+  @apply absolute top-0 left-0 h-full w-[400px] z-[-1] pointer-events-none;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#nextBtn::before {
+  @apply right-0 left-auto;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.press_section .swiper-wrapper {
+  @apply p-1;
+}
+.press_section .swiper-slide {
+  height: auto !important;
+}
