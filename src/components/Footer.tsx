@@ -163,6 +163,12 @@ const Footer = () => {
         </div>
       </div>
       {/** Footer Top --End-- */}
+
+      {/** Footer Bottom --Start-- */}
+      <div className="text-center py-5 container text-[#CCCCCC]">
+        © My Musawo 2021. All Rights Reserved.
+      </div>
+      {/** Footer Bottom --End-- */}
     </footer>
   );
 };
