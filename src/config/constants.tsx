@@ -10,19 +10,19 @@ import {
 export const menus = [
   {
     text: "About Us",
-    url: "#",
+    url: "#about-us",
   },
   {
     text: "Our Journey",
-    url: "#",
+    url: "#our-journey",
   },
   {
     text: "Our Team",
-    url: "#",
+    url: "#out-team",
   },
   {
     text: "Our Partners",
-    url: "#",
+    url: "#our-partners",
   },
 ];
 
@@ -302,7 +302,7 @@ export const forHealthExperts = [
 
 export const steadilyStats = [
   {
-    value: "30",
+    value: "50",
     label: "Health Experts",
   },
   {
@@ -310,7 +310,7 @@ export const steadilyStats = [
     label: "Beta Tester",
   },
   {
-    value: "$9,000",
+    value: "$15,000",
     label: "Funding",
   },
 ];

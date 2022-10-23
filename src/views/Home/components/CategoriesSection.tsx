@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { categories } from "@config/constants";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
+import Image from "next/image";
 
 const CategoriesSection = () => {
   return (
@@ -64,13 +65,15 @@ const CategoriesSection = () => {
                 >
                   {categories.map(({ imgSrc, title }, i) => (
                     <SwiperSlide key={i}>
-                      <div
-                        style={{
-                          backgroundImage: `url("${imgSrc}")`,
-                          backgroundPositionY: "-60px",
-                        }}
-                        className="h-[250px] rounded-[20px] overflow-hidden relative bg-no-repeat"
-                      >
+                      <div className="rounded-[20px] overflow-hidden relative">
+                        <Image
+                          src={imgSrc}
+                          alt={title}
+                          width={400}
+                          height={400}
+                          className="w-full h-full object-cover"
+                        />
+
                         <div
                           style={{
                             background:

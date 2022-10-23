@@ -87,14 +87,13 @@ function Header() {
             >
               {menus.map((nav, i) => (
                 <li key={i}>
-                  <Link href={nav.url}>
-                    <a
-                      onClick={closeSidebarForcely}
-                      className="hover:text-blue border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block lg:p-1"
-                    >
-                      {nav.text}
-                    </a>
-                  </Link>
+                  <a
+                    href={nav.url}
+                    onClick={closeSidebarForcely}
+                    className="hover:text-blue border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block lg:p-1 uppercase"
+                  >
+                    {nav.text}
+                  </a>
                 </li>
               ))}
             </ul>

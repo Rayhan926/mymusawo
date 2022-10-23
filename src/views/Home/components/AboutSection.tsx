@@ -18,7 +18,7 @@ const AboutSection = () => {
         ))}
       </div>
 
-      <div className="container mt-[100px]">
+      <div className="container mt-[100px] scroll-mt-[150px]" id="about-us">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div>
             <Image
