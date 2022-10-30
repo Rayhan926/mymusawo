@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 const Footer = () => {
   return (
-    <footer className="mt-[150px]">
+    <footer className="mt-16 lg:mt-[150px]">
       {/** Footer Top --Start-- */}
       <div
         style={{

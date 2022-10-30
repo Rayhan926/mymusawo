@@ -17,7 +17,6 @@ const PressHighlightsSection = dynamic(
 const Home = () => {
   return (
     <>
-      <Header />
       <HeroSection />
       <AboutSection />
       <HowItWorksSection />
@@ -25,7 +24,6 @@ const Home = () => {
       <ForHealthExpertsSection />
       <SteadilySection />
       <PressHighlightsSection />
-      <Footer />
     </>
   );
 };

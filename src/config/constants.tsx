@@ -5,6 +5,9 @@ import {
   FaYoutube,
   FaLinkedinIn,
   FaTiktok,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 
 export const menus = [
@@ -259,6 +262,214 @@ export const howItWorks = [
   },
 ];
 
+export const healthExpertSteps = [
+  {
+    icon: (
+      <svg
+        width={70}
+        height={70}
+        viewBox="0 0 70 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width={70} height={70} rx={20} fill="#0EB6D3" fillOpacity="0.1" />
+        <g clipPath="url(#clip0_56_403)">
+          <path
+            d="M44.6667 47C44.6667 46.6389 44.5347 46.3264 44.2708 46.0625C44.0069 45.7986 43.6944 45.6667 43.3333 45.6667C42.9722 45.6667 42.6597 45.7986 42.3958 46.0625C42.1319 46.3264 42 46.6389 42 47C42 47.3611 42.1319 47.6736 42.3958 47.9375C42.6597 48.2014 42.9722 48.3333 43.3333 48.3333C43.6944 48.3333 44.0069 48.2014 44.2708 47.9375C44.5347 47.6736 44.6667 47.3611 44.6667 47ZM50 47C50 46.6389 49.8681 46.3264 49.6042 46.0625C49.3403 45.7986 49.0278 45.6667 48.6667 45.6667C48.3056 45.6667 47.9931 45.7986 47.7292 46.0625C47.4653 46.3264 47.3333 46.6389 47.3333 47C47.3333 47.3611 47.4653 47.6736 47.7292 47.9375C47.9931 48.2014 48.3056 48.3333 48.6667 48.3333C49.0278 48.3333 49.3403 48.2014 49.6042 47.9375C49.8681 47.6736 50 47.3611 50 47ZM52.6667 42.3333V49C52.6667 49.5556 52.4722 50.0278 52.0833 50.4167C51.6944 50.8056 51.2222 51 50.6667 51H20C19.4444 51 18.9722 50.8056 18.5833 50.4167C18.1944 50.0278 18 49.5556 18 49V42.3333C18 41.7778 18.1944 41.3056 18.5833 40.9167C18.9722 40.5278 19.4444 40.3333 20 40.3333H29.6875L32.5 43.1667C33.3056 43.9444 34.25 44.3333 35.3333 44.3333C36.4167 44.3333 37.3611 43.9444 38.1667 43.1667L41 40.3333H50.6667C51.2222 40.3333 51.6944 40.5278 52.0833 40.9167C52.4722 41.3056 52.6667 41.7778 52.6667 42.3333ZM45.8958 30.4792C46.1319 31.0486 46.0347 31.5347 45.6042 31.9375L36.2708 41.2708C36.0208 41.5347 35.7083 41.6667 35.3333 41.6667C34.9583 41.6667 34.6458 41.5347 34.3958 41.2708L25.0625 31.9375C24.6319 31.5347 24.5347 31.0486 24.7708 30.4792C25.0069 29.9375 25.4167 29.6667 26 29.6667H31.3333V20.3333C31.3333 19.9722 31.4653 19.6597 31.7292 19.3958C31.9931 19.1319 32.3056 19 32.6667 19H38C38.3611 19 38.6736 19.1319 38.9375 19.3958C39.2014 19.6597 39.3333 19.9722 39.3333 20.3333V29.6667H44.6667C45.25 29.6667 45.6597 29.9375 45.8958 30.4792Z"
+            fill="url(#paint0_linear_56_403)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_56_403"
+            x1={18}
+            y1={19}
+            x2="49.8978"
+            y2="53.5559"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#00CECB" />
+            <stop offset={1} stopColor="#0EB6D3" />
+          </linearGradient>
+          <clipPath id="clip0_56_403">
+            <rect
+              width="34.6667"
+              height={32}
+              fill="white"
+              transform="translate(18 19)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    text: "Download the  My Musawo, Sign Up and  create your profile",
+  },
+  {
+    icon: (
+      <svg
+        width={70}
+        height={71}
+        viewBox="0 0 70 71"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          y="0.5"
+          width={70}
+          height={70}
+          rx={20}
+          fill="#0EB6D3"
+          fillOpacity="0.1"
+        />
+        <g clipPath="url(#clip0_56_413)">
+          <path
+            d="M46.7999 26.4H45.1999V39.2C45.1999 40.08 44.4799 40.8 43.5999 40.8H24.3999V42.4C24.3999 44.16 25.8399 45.6 27.5999 45.6H43.5999L49.9999 52V29.6C49.9999 27.84 48.5599 26.4 46.7999 26.4ZM41.9999 34.4V23.2C41.9999 21.44 40.5599 20 38.7999 20H21.1999C19.4399 20 17.9999 21.44 17.9999 23.2V44L24.3999 37.6H38.7999C40.5599 37.6 41.9999 36.16 41.9999 34.4Z"
+            fill="url(#paint0_linear_56_413)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_56_413"
+            x1="17.9999"
+            y1={20}
+            x2="49.9999"
+            y2={52}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <clipPath id="clip0_56_413">
+            <rect
+              width={32}
+              height={32}
+              fill="white"
+              transform="translate(18 19.5)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    text: "Answer health  and wellness Questions in the Ask a Musawo forum",
+  },
+  {
+    icon: (
+      <svg
+        width={70}
+        height={70}
+        viewBox="0 0 70 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width={70} height={70} rx={20} fill="#0EB6D3" fillOpacity="0.1" />
+        <g clipPath="url(#clip0_56_423)">
+          <path
+            d="M27.6384 20.091C25.498 20.4998 23.8014 22.0312 23.1401 24.1455C22.8793 24.9896 22.8616 26.5122 23.1052 27.3214C23.6619 29.1744 25.0889 30.6712 26.8988 31.2887C27.4993 31.4889 28.9697 31.6107 29.5353 31.5062L29.8311 31.4539L29.8833 30.7754C30.0747 28.313 31.7106 25.7638 33.7031 24.8156C34.2948 24.537 34.2948 24.537 34.2425 24.2327C34.2164 24.0675 34.0339 23.5976 33.8422 23.1885C33.3638 22.1965 32.3023 21.1176 31.3364 20.6477C30.1442 20.0649 28.813 19.8647 27.6384 20.091Z"
+            fill="url(#paint0_linear_56_423)"
+          />
+          <path
+            d="M37.2092 24.5366C34.4337 25.1632 32.3021 27.1991 31.5886 29.9309C31.3277 30.9141 31.3277 32.5235 31.5886 33.4982C32.2933 36.1608 34.3119 38.1706 36.9483 38.8491C38.3403 39.2057 40.3155 39.0493 41.6206 38.4749C43.6219 37.5874 45.1791 35.8039 45.7881 33.6981C46.049 32.7844 46.1101 31.2707 45.9187 30.3136C45.2141 26.8419 42.2123 24.3884 38.6972 24.4145C38.1666 24.4148 37.4965 24.4759 37.2092 24.5366Z"
+            fill="url(#paint1_linear_56_423)"
+          />
+          <path
+            d="M23.3058 31.1407C22.1398 31.9061 21.122 32.9676 20.3909 34.1859C19.9298 34.9513 19.4253 36.1869 19.1991 37.144C18.8771 38.4491 18.7726 38.3273 20.2606 38.3273H21.5485L23.3058 36.5696L25.072 34.8034L26.4556 36.1869L27.8391 37.5704L28.5698 36.8396C29.1876 36.2134 30.3883 35.2909 30.7276 35.1779C30.8059 35.1518 30.7625 34.8214 30.5535 33.9423L30.2665 32.7502L29.6921 32.8197C27.5951 33.0806 25.8551 32.5412 24.324 31.1665L23.8802 30.7662L23.3058 31.1407Z"
+            fill="url(#paint2_linear_56_423)"
+          />
+          <path
+            d="M22.1225 39.6587L19.6516 42.0254L21.0263 42.0688L22.4098 42.1122L22.6446 43.0344C23.4449 46.1841 25.5419 48.3069 28.9003 49.3596C29.3528 49.4987 29.8661 49.6381 30.0314 49.6727L30.336 49.725L30.0751 49.5336C29.4834 49.0987 28.5959 48.1589 28.161 47.5065C27.3257 46.2536 26.8647 44.766 26.7514 42.9821L26.6991 42.0685L28.1522 42.0512L29.6052 42.0251L27.1256 39.6499C25.7597 38.3535 24.6371 37.2832 24.6198 37.2832C24.6021 37.2832 23.4799 38.3535 22.1225 39.6587Z"
+            fill="url(#paint3_linear_56_423)"
+          />
+          <path
+            d="M31.8148 38.5709C31.3799 38.8495 30.7794 39.2844 30.4751 39.5368L29.9268 40.0067L31.4145 41.4944C32.2325 42.3123 32.9022 43.017 32.9022 43.0519C32.9022 43.0869 31.8495 43.113 30.5704 43.113H28.2299L28.3082 43.6524C28.4039 44.4354 28.7781 45.5838 29.1347 46.2451C29.761 47.4023 30.3788 48.0286 32.0666 49.238L32.7539 49.7252H41.8723H50.9998V49.0029C50.991 44.4351 49.1987 40.9461 45.6751 38.6144L44.831 38.0576L44.1348 38.6581C43.021 39.624 41.8726 40.2242 40.5068 40.5638C39.5758 40.79 37.679 40.7639 36.7308 40.5115C35.3734 40.1461 33.9464 39.3458 33.0766 38.4583C32.8679 38.2408 32.6677 38.0668 32.6416 38.0668C32.6155 38.0668 32.2413 38.2924 31.8148 38.5709Z"
+            fill="url(#paint4_linear_56_423)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_56_423"
+            x1="22.933"
+            y1="31.5444"
+            x2="34.4753"
+            y2="20.2157"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_56_423"
+            x1="31.3929"
+            y1="39.0392"
+            x2="46.0178"
+            y2="24.4016"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <linearGradient
+            id="paint2_linear_56_423"
+            x1="18.9999"
+            y1="38.3303"
+            x2="25.8819"
+            y2="27.627"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <linearGradient
+            id="paint3_linear_56_423"
+            x1="19.6516"
+            y1="49.725"
+            x2="31.9505"
+            y2="39.1633"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <linearGradient
+            id="paint4_linear_56_423"
+            x1="28.2299"
+            y1="49.7252"
+            x2="37.7004"
+            y2="31.2429"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <clipPath id="clip0_56_423">
+            <rect
+              width={32}
+              height={32}
+              fill="white"
+              transform="translate(19 19)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    text: "Activate your referral link and earn UGX 10K for every qualifying  referral",
+  },
+];
+
+export const contactInfo = [
+  {
+    icon: <FaPhoneAlt />,
+    text: "+256 706193685",
+  },
+  {
+    icon: <FaMapMarkerAlt />,
+    text: "14A Naguru Drive Close",
+  },
+  {
+    icon: <FaEnvelope />,
+    text: "business@mymusawo.com",
+  },
+];
+
 export const categories = [
   {
     imgSrc: "/img/1.png",
@@ -359,5 +570,151 @@ export const pressHighlights = [
     imgSrc: "/img/thecapitaltimes.png",
     description: "45 Ugandan Innovators to share Ugx 7.39 Billion NIISP Grant",
     link: "https://thecapitaltimes.co.ug/2021/02/06/45-ugandan-innovators-to-share-ugx7-39-billion-niisp-grant",
+  },
+];
+
+export const pricePlans = [
+  {
+    icon: (
+      <svg
+        width={50}
+        height={50}
+        viewBox="0 0 50 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clipPath="url(#clip0_56_709)">
+          <path
+            d="M49.2187 0.30692C49.8325 0.753348 50.0836 1.34859 49.972 2.09263L42.8292 44.9498C42.7362 45.4892 42.4385 45.9077 41.9363 46.2054C41.6759 46.3542 41.3876 46.4286 41.0714 46.4286C40.8667 46.4286 40.6435 46.3821 40.4017 46.2891L27.7622 41.1272L21.01 49.3583C20.6751 49.7861 20.2194 50 19.6428 50C19.401 50 19.1964 49.9628 19.0289 49.8884C18.6755 49.7582 18.3919 49.5396 18.1779 49.2327C17.964 48.9258 17.8571 48.5863 17.8571 48.2143V38.4766L41.9642 8.92857L12.1372 34.7377L1.116 30.2176C0.427754 29.9572 0.0557299 29.4457 -7.36297e-05 28.683C-0.037276 27.939 0.260343 27.3903 0.892783 27.0368L47.3214 0.251116C47.6004 0.0837054 47.898 0 48.2142 0C48.5862 0 48.9211 0.102307 49.2187 0.30692Z"
+            fill="url(#paint0_linear_56_709)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_56_709"
+            x1="-0.00317383"
+            y1={0}
+            x2="49.9968"
+            y2="50.001"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <clipPath id="clip0_56_709">
+            <rect width={50} height={50} fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    name: "Quarterly Plan",
+    title: "UGX 450K",
+    features: [
+      "1 Month Free Trial",
+      "In-app Bookings",
+      "In-app Locator",
+      "Monthly Report",
+      "24/7 Support",
+    ],
+  },
+  {
+    bestValue: true,
+    icon: (
+      <svg
+        width={70}
+        height={70}
+        viewBox="0 0 70 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clipPath="url(#clip0_56_781)">
+          <path
+            d="M48.9892 10.8874L39.673 20.207L26.796 17.3208C28.0109 15.6227 29.8701 11.6693 28.3532 10.1524C26.6181 8.42072 21.715 11.0921 20.6209 12.1828L17.5569 15.2468L8.52926 13.2198L1.75013 19.9989L9.24073 23.563L8.96554 23.8382L14.6707 29.5434L16.9864 27.2412L27.6014 32.2886L15.0936 44.783H4.50205L0.686279 48.6021L12.7679 51.7836L18.9094 57.9251L22.0875 70L25.9033 66.1842V55.5893L38.4044 43.0882L43.4518 53.7066L41.1429 56.0088L46.8548 61.714L47.1233 61.4456L50.6907 68.9294L57.4698 62.1503L55.4428 53.1294L58.5035 50.0687C59.5975 48.9747 62.2622 44.0615 60.5305 42.3298C59.0102 40.8129 55.0602 42.6654 53.3621 43.887L50.4759 31.0066L59.7922 21.687C62.9703 18.5055 71.8738 5.36675 68.5849 2.08794C65.3061 -1.19423 52.1674 7.70253 48.9859 10.8807L48.9892 10.8874Z"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_56_781">
+            <rect width={70} height={70} fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    name: "Bi-Annual Plan",
+    title: "UGX 870K",
+    features: [
+      "1 Month Free Trial",
+      "In-app Bookings",
+      "In-app Locator",
+      "Monthly Report",
+      "24/7 Support",
+    ],
+  },
+  {
+    icon: (
+      <svg
+        width={50}
+        height={50}
+        viewBox="0 0 50 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clipPath="url(#clip0_56_745)">
+          <path
+            d="M18.4228 9.90088C13.1958 15.7684 9.60866 24.1982 9.27557 24.9925L0.000244141 21.021L10.3773 10.6439C11.5816 9.43968 13.3239 8.90161 15.015 9.2347L18.4228 9.90088ZM23.496 37.1888C23.496 37.1888 33.0788 33.2173 38.5876 27.7085C52.4238 13.8724 50.1177 3.05969 49.3747 0.62556C46.9406 -0.143113 36.1279 -2.42351 22.2918 11.4126C16.7829 16.9214 12.8115 26.5042 12.8115 26.5042L23.496 37.1888ZM40.0994 31.5775C34.2318 36.8044 25.802 40.3916 25.0077 40.7247L28.9792 50L39.3563 39.6229C40.5606 38.4187 41.0986 36.6763 40.7655 34.9852L40.0994 31.5775ZM17.936 39.751C17.936 41.8777 17.0648 43.7994 15.6812 45.183C12.6577 48.2064 0.000244141 50 0.000244141 50C0.000244141 50 1.79382 37.3425 4.81726 34.3191C5.89032 33.2404 7.25972 32.5049 8.75158 32.2061C10.2434 31.9072 11.7905 32.0584 13.1962 32.6405C14.602 33.2225 15.8031 34.2092 16.647 35.4753C17.4909 36.7413 17.9395 38.2295 17.936 39.751ZM28.1849 16.6908C28.1849 13.8724 30.4909 11.5663 33.3094 11.5663C36.1279 11.5663 38.4339 13.8724 38.4339 16.6908C38.4339 19.5093 36.1279 21.8153 33.3094 21.8153C30.4909 21.8153 28.1849 19.5093 28.1849 16.6908Z"
+            fill="url(#paint0_linear_56_745)"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_56_745"
+            x1="0.000244141"
+            y1={0}
+            x2="50.0002"
+            y2="49.9886"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#0EB6D3" />
+            <stop offset={1} stopColor="#00CECB" />
+          </linearGradient>
+          <clipPath id="clip0_56_745">
+            <rect width={50} height={50} fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+    name: "Annual Plan",
+    title: "UGX 1.5M",
+    features: [
+      "1 Month Free Trial",
+      "In-app Bookings",
+      "In-app Locator",
+      "Monthly Report",
+      "24/7 Support",
+    ],
+  },
+];
+
+export const teams = [
+  {
+    imgSrc: "/img/deliah-nalukwago.png",
+    name: "Deliah Nalukwago",
+    title: "Co-Founder, CEO",
+    about:
+      "Sino-Africa Entrepreneur, Creative director Event Couture Beijing. MBBS from Xi'an Jiaotong University School of Medicine, China.",
+  },
+  {
+    imgSrc: "/img/louis-musanje-michael.png",
+    name: "Louis Musanje Michael",
+    title: "Co-Founder, CTO",
+    about:
+      "Created Yonja App, Technical lead Tyro Uganda. Computer Software Engineering at Aptech Uganda. Worked at Andela.",
+  },
+  {
+    imgSrc: "/img/dr-farida-nansubuga.png",
+    name: "Dr. Farida Nansubuga",
+    title: "Medical Team Lead",
+    about:
+      "OB/GYN Bugando Hospital, Tanzania., China-Uganda Friendship Hospital, MBBS from Nanchang University. Masters in Obstetrics & Gyneacology from Wuhan Medical University.",
   },
 ];
