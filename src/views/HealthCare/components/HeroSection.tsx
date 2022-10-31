@@ -48,7 +48,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex items-end translate-y-[120px] scale-[1.3] lg:translate-x-20 origin-bottom-right">
+          <div className="flex items-end translate-y-[120px] scale-[1.3] translate-x-14 lg:translate-x-20 origin-bottom-right">
             <Image
               src={"/img/nurse1.png"}
               width={1132}

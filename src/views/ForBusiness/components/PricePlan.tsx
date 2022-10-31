@@ -1,8 +1,5 @@
-import { healthExpertSteps, pricePlans } from "@config/constants";
+import { cx, pricePlans } from "@config/constants";
 import React from "react";
-import { HiOutlineChevronRight } from "react-icons/hi";
-
-const cx = (...args: string[]) => args.join(" ");
 
 const PricePlan = () => {
   return (
@@ -23,24 +20,24 @@ const PricePlan = () => {
                       : "white",
                   }}
                   className={cx(
-                    "shadow-[0px_10px_24px_0px_#0000000F] rounded-[20px] p-[50px] flex flex-col items-center w-full relative overflow-hidden",
+                    "shadow-[0px_10px_24px_0px_#0000000F] rounded-[20px] p-8 lg:p-[50px] flex flex-col items-center w-full relative overflow-hidden",
                   )}
                 >
                   {icon}
                   <h6
                     className={cx(
-                      "text-xl mt-6 font-medium",
+                      "text-base lg:text-xl mt-6 font-medium",
                       !bestValue ? "text-black" : "text-white",
                     )}
                   >
-                    Quarterly Plan
+                    {name}
                   </h6>
                   <h4
                     className={cx(
                       "font-segoe-ui-bold mt-4",
                       bestValue
-                        ? "text-white text-[64px]"
-                        : "gradient_text text-[48px]",
+                        ? "text-white text-[40px] lg:text-[64px]"
+                        : "gradient_text text-[35px] lg:text-[48px]",
                     )}
                   >
                     {title}
@@ -53,8 +50,8 @@ const PricePlan = () => {
                         className={cx(
                           "flex items-center gap-3",
                           bestValue
-                            ? "text-white text-[22px]"
-                            : "text-black text-xl",
+                            ? "text-white text-lg lg:text-[22px]"
+                            : "text-black text-base lg:text-xl",
                         )}
                       >
                         <div className="shrink-0">
@@ -65,6 +62,7 @@ const PricePlan = () => {
                               viewBox="0 0 32 32"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
+                              className="scale-[0.7] lg:scale-100"
                             >
                               <g clipPath="url(#clip0_56_756)">
                                 <path
@@ -122,7 +120,7 @@ const PricePlan = () => {
                       style={{
                         transform: "translate(48px, 26px) rotate(44deg)",
                       }}
-                      className="bg-white font-segoe-ui-bold uppercase absolute top-0 right-0 px-10"
+                      className="bg-white font-segoe-ui-bold uppercase absolute top-0 right-0 px-10 text-sm lg:text-base"
                     >
                       <span className="gradient_text">Best Value</span>
                     </div>

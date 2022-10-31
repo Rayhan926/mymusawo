@@ -4,7 +4,10 @@ import React from "react";
 
 const TeamSection = () => {
   return (
-    <section className="pt-[50px] pb-[70px] bg-[#F2F2F2]">
+    <section
+      className="pt-[50px] pb-[70px] bg-[#F2F2F2] scroll-mt-14 lg:scroll-mt-20"
+      data-id="our-team"
+    >
       <div className="container">
         <h2 className="text-[26px] lg:text-[36px] font-segoe-ui-bold text-center">
           Our Team

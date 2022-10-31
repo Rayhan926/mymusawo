@@ -4,7 +4,7 @@ import React from "react";
 const SteadilySection = () => {
   return (
     <section
-      id="for-businesses"
+      data-id="for-businesses"
       className="scroll-mt-[150px] bg-[url('/img/steadily-getting-there.png')] bg-no-repeat bg-center bg-cover py-[80px] xl:pt-[50px] xl:pb-[208px]"
     >
       <div className="container text-white">

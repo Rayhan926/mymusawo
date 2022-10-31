@@ -1,5 +1,6 @@
 import { facilities } from "@config/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AboutSection = () => {
@@ -18,7 +19,10 @@ const AboutSection = () => {
         ))}
       </div>
 
-      <div className="container mt-[100px] scroll-mt-[150px]" id="about-us">
+      <div
+        className="container mt-[100px] scroll-mt-[150px]"
+        data-id="about-us"
+      >
         <div className="grid grid-cols-1 xl:grid-cols-[60%,auto] gap-5">
           <div className="overflow-hidden">
             <div className="scale-[1.3] py-6 xl:scale-100 xl:py-0">
@@ -49,9 +53,11 @@ const AboutSection = () => {
             </p>
 
             <div className="flex justify-center md:justify-start w-full">
-              <button className="gradient_btn">
-                <span>Join our mailing list</span>
-              </button>
+              <Link href={"/about-us"}>
+                <a className="gradient_btn">
+                  <span>Read more</span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

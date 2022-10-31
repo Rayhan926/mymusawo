@@ -1,6 +1,7 @@
-import HeroSection from "@views/ForBusiness/components/HeroSection";
+import HeroSection from "@views/AboutUs/components/HeroSection";
 import React from "react";
 import AboutUsSection from "./components/AboutUsSection";
+import OurJourneySection from "./components/OurJourneySection";
 import TeamSection from "./components/TeamSection";
 
 const AboutUs = () => {
@@ -9,6 +10,7 @@ const AboutUs = () => {
       <HeroSection />
       <AboutUsSection />
       <TeamSection />
+      <OurJourneySection />
     </>
   );
 };

@@ -13,42 +13,42 @@ import {
 export const menus = [
   {
     text: "About Us",
-    url: "#about-us",
+    url: "/#about-us",
   },
   {
     text: "How it Works",
-    url: "#how-it-works",
+    url: "/#how-it-works",
   },
   {
     text: "For Experts",
-    url: "#for-experts",
+    url: "/#for-experts",
   },
   {
     text: "For Businesses",
-    url: "#for-businesses",
+    url: "/#for-businesses",
   },
 ];
 
 export const quickLinks = [
   {
     text: "About Us",
-    url: "#about-us",
+    url: "/about-us",
   },
   {
     text: "For Experts",
-    url: "#for-experts",
+    url: "/health-care",
   },
   {
     text: "For Businesses",
-    url: "#for-businesses",
+    url: "/for-business",
   },
   {
     text: "Our Team",
-    url: "#our-team",
+    url: "/about-us#our-team",
   },
   {
     text: "Our Journey",
-    url: "#our-journey",
+    url: "/about-us#our-journey",
   },
 ];
 
@@ -526,11 +526,13 @@ export const forHealthExperts = [
     title: "For Health and Wellness Experts",
     description:
       "Answer users' health questions, earn badges, earn referral allowances, network with colleagues, and build your personal brand.",
+    link: "/health-care",
   },
   {
     title: "For Health & Wellness Businesses",
     description:
       "Get direct bookings, improve brand awareness, and increase revenue for your business.",
+    link: "/for-business",
   },
 ];
 
@@ -716,5 +718,43 @@ export const teams = [
     title: "Medical Team Lead",
     about:
       "OB/GYN Bugando Hospital, Tanzania., China-Uganda Friendship Hospital, MBBS from Nanchang University. Masters in Obstetrics & Gyneacology from Wuhan Medical University.",
+  },
+];
+
+type CX = string | boolean | undefined;
+export const cx = (...args: CX[]) => args.join(" ");
+
+export const roadmaps = [
+  {
+    date: "November, 2019",
+    title: "Start",
+    description: "My Musawo is started",
+  },
+  {
+    date: "december, 2020",
+    title: "Award",
+    description:
+      "My Musawo wins the Uganda Ministry of ICT NIISP innovation award",
+  },
+  {
+    date: "September, 2021",
+    title: "prototype",
+    description: "Internal testing of the prototype",
+  },
+  {
+    date: "December, 2021",
+    title: "top 10",
+    description:
+      "My Musawo makes it to the Top 10 of the UNDP ideathon competition",
+  },
+  {
+    date: "September, 2022",
+    title: "Current stage",
+    description: "Beta launch on the Google play store",
+  },
+  {
+    date: "October, 2022",
+    title: "coming soon",
+    description: "Beta app launch on iOS App store",
   },
 ];

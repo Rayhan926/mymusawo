@@ -1,5 +1,3 @@
-import Footer from "@components/Footer";
-import Header from "@components/Header";
 import dynamic from "next/dynamic";
 import React from "react";
 import AboutSection from "./components/AboutSection";

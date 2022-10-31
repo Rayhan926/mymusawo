@@ -5,7 +5,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 const HowItWorksSection = () => {
   return (
     <section
-      id="how-it-works"
+      data-id="how-it-works"
       className="bg-[url('/img/how-it-works-mobile-bg.jpeg')] xl:bg-[url('/img/how-it-works-desktop-bg.jpeg')] bg-no-repeat bg-center pb-[160px] pt-[50px] mt-[100px] scroll-mt-[150px]"
     >
       <div className="container text-white">

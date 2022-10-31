@@ -6,6 +6,7 @@ import TextArea from "./Textarea";
 import { Formik } from "formik";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -25,12 +26,11 @@ const Footer = () => {
               <ul className="my-5 xl:my-[30px]">
                 {quickLinks.map(({ text, url }, i) => (
                   <li key={i}>
-                    <a
-                      className="text-[15px] xl:text-[16px] py-0.5 hover:underline inline-block"
-                      href={url}
-                    >
-                      {text}
-                    </a>
+                    <Link href={url}>
+                      <a className="text-[15px] xl:text-[16px] py-0.5 hover:underline inline-block">
+                        {text}
+                      </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
